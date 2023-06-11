@@ -371,7 +371,7 @@ def help_button(update, context):
 
 def neko_about_callback(update, context):
     query = update.callback_query
-    if query.data = "neko_":
+    if query.data == "neko_":
         query.message.edit_text(
             text=""" hey I'm *Neko*, a Cute group management bot Created with Cuteness to help you manage your group easily.
                  \n❍ I can restrict users.
