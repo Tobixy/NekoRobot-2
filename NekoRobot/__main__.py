@@ -371,6 +371,7 @@ def help_button(update, context):
 
 def neko_about_callback(update, context):
     query = update.callback_query
+    uptime = get_readable_time((time.time() - StartTime))
     if query.data == "neko_":
         query.message.edit_text(
             text=""" hey I'm *Neko*, a Cute group management bot Created with Cuteness to help you manage your group easily.
